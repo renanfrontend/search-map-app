@@ -1,0 +1,14 @@
+<div class="search-container" [class.top]="showMap">
+  <input [(ngModel)]="address" (keyup.enter)="searchAddress()" placeholder="Informe um endereço">
+  <button (click)="searchAddress()">Buscar</button>
+</div>
+
+<div *ngIf="showMap" class="map-container">
+  <google-map [center]="{lat: latitude, lng: longitude}" [options]="mapOptions" height="500px" width="100%">
+    <map-marker [position]="{lat: latitude, lng: longitude}" [options]="markerOptions"></map-marker>
+  </google-map>
+  <div class="info-container">
+    <p>{{ additionalInfo.formatted_address }}</p>
+    <!-- Adicione outras informações relevantes aqui -->
+  </div>
+</div>
