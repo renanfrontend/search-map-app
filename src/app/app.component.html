@@ -1,14 +1,22 @@
+<!-- Container para a busca -->
 <div class="search-container" [class.top]="showMap">
+  <!-- Input para endereço com ligação de dados bidirecional e evento de tecla Enter -->
   <input [(ngModel)]="address" (keyup.enter)="searchAddress()" placeholder="Informe um endereço">
+  <!-- Botão para acionar a busca -->
   <button (click)="searchAddress()">Buscar</button>
 </div>
 
+<!-- Container para o mapa que é exibido condicionalmente -->
 <div *ngIf="showMap" class="map-container">
+  <!-- Componente do Google Maps -->
   <google-map [center]="{lat: latitude, lng: longitude}" [options]="mapOptions" height="500px" width="100%">
+    <!-- Marcador no mapa -->
     <map-marker [position]="{lat: latitude, lng: longitude}" [options]="markerOptions"></map-marker>
   </google-map>
+  <!-- Container para exibir informações adicionais -->
   <div class="info-container">
-    <p>{{ additionalInfo.formatted_address }}</p>
+    <!-- Exibição do endereço formatado -->
+    <p>{{ additionalInfo?.formatted_address }}</p>
     <!-- Adicione outras informações relevantes aqui -->
   </div>
 </div>
