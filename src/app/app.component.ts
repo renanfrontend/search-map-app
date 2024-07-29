@@ -14,6 +14,7 @@ import { environment } from '../environments/environment';
 })
 export class AppComponent implements OnInit {
   address: string = '';
+  errorMessage: string = '';
   latitude: number = 0;
   longitude: number = 0;
   zoom: number = 15;
@@ -42,6 +43,7 @@ export class AppComponent implements OnInit {
   }
 
   searchAddress(): void {
+    this.errorMessage = '';
     const encodedAddress = encodeURIComponent(this.address);
     this.http.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=${environment.googleMapsApiKey}`)
       .subscribe({
@@ -52,12 +54,14 @@ export class AppComponent implements OnInit {
             this.additionalInfo = response.results[0];
             this.showMap = true;
           } else {
-            alert('Endereço não encontrado!');
+            this.showMap = false;
+            this.errorMessage = 'Endereço não encontrado!';
           }
         },
         error: (error) => {
+          this.showMap = false;
           console.error('Erro ao buscar o endereço', error);
-          alert('Ocorreu um erro ao buscar o endereço.');
+          this.errorMessage = 'Ocorreu um erro ao buscar o endereço.';
         }
       });
   }

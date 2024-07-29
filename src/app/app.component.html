@@ -23,6 +23,11 @@
       <p><strong>Informações adicionais:</strong> {{ additionalInfo?.formatted_address }}</p>
     </div>
   </div>
+
+  <!-- Container para mensagem de erro -->
+  <div *ngIf="errorMessage" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
 </main>
 
 <!-- Container para o rodapé -->

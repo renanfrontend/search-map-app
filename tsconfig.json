@@ -23,11 +23,19 @@
     ]
   },
   "files": [
-    "src/polyfills.ts" // Certifique-se de que este caminho está correto
+    "src/polyfills.ts"
   ],
   "include": [
     "src/**/*.ts",
     "src/typings.d.ts"  // Adicione se necessário
+  ],
+  "exclude": [
+    "src/app/app.config.server.ts",
+    "src/app/app.config.ts",
+    "src/app/app.module.ts",
+    "src/app/app.routes.ts",
+    "src/environments/environment.prod.ts",
+    "src/main.server.ts"
   ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

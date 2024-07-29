@@ -77,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "search-map-app:build:production"
+              "buildTarget": "search-map-app:build:production"
             },
             "development": {
-              "browserTarget": "search-map-app:build:development"
+              "buildTarget": "search-map-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,7 +88,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "search-map-app:build"
+            "buildTarget": "search-map-app:build"
           }
         },
         "test": {
@@ -131,13 +131,5 @@
     "@schematics/angular:component": {
       "style": "scss"
     }
-  },
-  "architect": {
-  "test": {
-    "builder": "@angular-builders/jest:run",
-    "options": {
-      "jestConfig": "jest.config.js"
-    }
   }
-}
 }

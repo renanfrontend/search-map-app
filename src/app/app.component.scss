@@ -160,3 +160,21 @@ footer p {
     }
   }
 }
+
+/* Estilos para o erro da mensagem */
+.error-message {
+  color: red; /* Define a cor do texto como vermelho */
+  font-weight: bold; /* Torna o texto em negrito */
+  margin-top: 1rem; /* Espaçamento superior para separar do container de busca */
+  padding: 0.5rem; /* Espaçamento interno para melhorar a visibilidade */
+  background-color: #f8d7da; /* Cor de fundo leve para destacar a mensagem */
+  border: 1px solid #f5c6cb; /* Borda vermelha clara */
+  border-radius: 4px; /* Bordas arredondadas */
+  width: 100%; /* Largura total do container pai */
+  max-width: 600px; /* Largura máxima para evitar que a mensagem fique muito larga */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+  position: relative; /* Necessário para posicionamento se precisar ajustar com base no layout */
+  margin-left: auto; /* Centralizar horizontalmente */
+  margin-right: auto; /* Centralizar horizontalmente */
+}
+
