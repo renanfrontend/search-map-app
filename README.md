@@ -1,6 +1,6 @@
 # Search Map App
 
-<img src="./src/assets/demo.gif" alt="Vídeo de demonstração" width="580" height="580">
+<img src="./src/assets/demo.gif" alt="Vídeo de demonstração" width="980" height="580">
 
 <p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" alt="Brazil Flag" width="30" height="20"> 
