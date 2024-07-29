@@ -72,7 +72,7 @@ Search Map App é um aplicativo web que permite aos usuários buscar um endereç
 
 <p>
   <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA Flag" width="30" height="20"> 
-  <strong>Description in English</strong>
+  <strong>English Description</strong>
 </p>
 
 Search Map App is a web application that allows users to search for an address and display its location on a Google Map. The application is built using Angular and leverages the Google Maps API to provide geocoding and mapping functionalities.
