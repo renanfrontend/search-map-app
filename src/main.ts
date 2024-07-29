@@ -1,6 +1,8 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
+import { environment } from './environments/environment';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+(window as any).__env__ = window.__env__ || {};
+(window as any).__env__.googleMapsApiKey = environment.googleMapsApiKey;
+bootstrapApplication(AppComponent)
+  .catch(err => console.error(err));
