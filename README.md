@@ -1,8 +1,6 @@
 # Search Map App
 
-<p>
-  <iframe width="1280" height="693" src="https://www.youtube.com/embed/2HdtXvxiAqY" title="Aplicação de Busca de mapas usando a API do Google Maps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</p>
+<img src="./src/assets/demo.gif" alt="Vídeo de demonstração" width="580" height="580">
 
 <p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" alt="Brazil Flag" width="30" height="20"> 
