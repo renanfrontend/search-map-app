@@ -1,22 +1,39 @@
-<!-- Container para a busca -->
-<div class="search-container" [class.top]="showMap">
-  <!-- Input para endereço com ligação de dados bidirecional e evento de tecla Enter -->
-  <input [(ngModel)]="address" (keyup.enter)="searchAddress()" placeholder="Informe um endereço">
-  <!-- Botão para acionar a busca -->
-  <button (click)="searchAddress()">Buscar</button>
-</div>
+<!-- Container para o cabeçalho e logo -->
+<header>
+  <img src="../assets/logo_search_map.png" alt="Logo" class="logo">
+  <button class="theme-toggle-btn" (click)="toggleTheme()">
+    {{ isDarkMode ? 'Modo Claro' : 'Modo Escuro' }}
+  </button>
+</header>
 
-<!-- Container para o mapa que é exibido condicionalmente -->
-<div *ngIf="showMap" class="map-container">
-  <!-- Componente do Google Maps -->
-  <google-map [center]="{lat: latitude, lng: longitude}" [options]="mapOptions" height="500px" width="100%">
-    <!-- Marcador no mapa -->
-    <map-marker [position]="{lat: latitude, lng: longitude}" [options]="markerOptions"></map-marker>
-  </google-map>
-  <!-- Container para exibir informações adicionais -->
-  <div class="info-container">
-    <!-- Exibição do endereço formatado -->
-    <p><strong>Informações adicionais:</strong> {{ additionalInfo?.formatted_address }}</p>
-    <!-- Adicione outras informações relevantes aqui -->
+<!-- Container para o conteúdo principal -->
+<main>
+  <!-- Container para a busca -->
+  <div class="search-container" [class.top]="showMap">
+    <input [(ngModel)]="address" (keyup.enter)="searchAddress()" placeholder="Informe um endereço">
+    <button (click)="searchAddress()">Buscar</button>
   </div>
-</div>
+
+  <!-- Container para o mapa que é exibido condicionalmente -->
+  <div *ngIf="showMap" class="map-container">
+    <google-map [center]="{ lat: latitude, lng: longitude }" [options]="mapOptions" height="500px" width="100%">
+      <map-marker [position]="{ lat: latitude, lng: longitude }" [options]="markerOptions"></map-marker>
+    </google-map>
+    <div class="info-container">
+      <p><strong>Informações adicionais:</strong> {{ additionalInfo?.formatted_address }}</p>
+    </div>
+  </div>
+</main>
+
+<!-- Container para o rodapé -->
+<footer>
+  <p>Desenvolvido por: Renan Augusto | Todos os Direitos Reservados &copy;</p>
+  <div class="social-links">
+    <a href="https://github.com/renanfrontend" target="_blank" aria-label="Github">
+      <img src="../assets/github-logo.png" alt="Github">
+    </a>
+    <a href="https://www.linkedin.com/in/renan-augusto-santos" target="_blank" aria-label="LinkedIn">
+      <img src="../assets/linkedin-logo.png" alt="LinkedIn">
+    </a>
+  </div>
+</footer>
