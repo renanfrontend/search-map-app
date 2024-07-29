@@ -1,19 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // Para usar [(ngModel)]
-import { HttpClientModule } from '@angular/common/http'; // Importar o HttpClientModule
-import { GoogleMapsModule } from '@angular/google-maps'; // Módulo correto para o Google Maps
+import { HttpClientModule, HttpClient  } from '@angular/common/http'; // Importar o HttpClientModule
+import { GoogleMapsModule } from '@angular/google-maps'; // Verifique se você está usando o módulo correto para o Google Maps
+
+import { AppComponent } from './app.component';
 
 @NgModule({
+  declarations: [
+    AppComponent
+    // Outros componentes
+  ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule, // Corrigido para HttpClientModule
-    GoogleMapsModule // Módulo do Google Maps
+    HttpClient,
+    HttpClientModule, // Adicione HttpClientModule aqui
+    GoogleMapsModule // Adicione o módulo do Google Maps aqui
   ],
   providers: [],
-  // Remover AppComponent de declarations se estiver usando standalone
-  // declarations: [AppComponent], // Não necessário para standalone
-  // Mantenha bootstrap se for necessário para outros módulos
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

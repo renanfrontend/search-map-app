@@ -1,3 +1,5 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -22,13 +24,6 @@
       "dom"
     ]
   },
-  "files": [
-    "src/polyfills.ts" // Certifique-se de que este caminho está correto
-  ],
-  "include": [
-    "src/**/*.ts",
-    "src/typings.d.ts"  // Adicione se necessário
-  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
