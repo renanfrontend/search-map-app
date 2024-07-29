@@ -24,6 +24,33 @@ Search Map App é um aplicativo web que permite aos usuários buscar um endereç
 - Angular Forms
 - Angular HttpClient
 
+### Estrutura de Pastas
+
+search-map-app/
+├── assets/
+│ └── demo-video.mp4
+├── src/
+│ ├── app/
+│ │ ├── components/
+│ │ ├── services/
+│ │ ├── app.component.ts
+│ │ ├── app.module.ts
+│ │ └── app-routing.module.ts
+│ ├── environments/
+│ │ └── environment.ts
+│ ├── styles.scss
+│ ├── index.html
+│ └── main.ts
+├── e2e/
+│ └── src/
+│ ├── app.e2e-spec.ts
+│ └── app.po.ts
+├── .gitignore
+├── angular.json
+├── package.json
+├── README.md
+└── tsconfig.json
+
 ### Decisões de Projeto
 
 1. **Uso do Angular**: Escolhi o Angular como framework devido à sua robustez e à facilidade de integração com APIs externas.
@@ -91,6 +118,33 @@ Search Map App is a web application that allows users to search for an address a
 - Angular Google Maps
 - Angular Forms
 - Angular HttpClient
+
+### Folders Structure
+
+search-map-app/
+├── assets/
+│ └── demo-video.mp4
+├── src/
+│ ├── app/
+│ │ ├── components/
+│ │ ├── services/
+│ │ ├── app.component.ts
+│ │ ├── app.module.ts
+│ │ └── app-routing.module.ts
+│ ├── environments/
+│ │ └── environment.ts
+│ ├── styles.scss
+│ ├── index.html
+│ └── main.ts
+├── e2e/
+│ └── src/
+│ ├── app.e2e-spec.ts
+│ └── app.po.ts
+├── .gitignore
+├── angular.json
+├── package.json
+├── README.md
+└── tsconfig.json
 
 ### Design Decisions
 
