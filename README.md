@@ -1,12 +1,10 @@
 # Search Map App
 
-<p align="center">
-  <iframe width="560" height="315" src="assets/demo-video.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+  <iframe width="1280" height="693" src="https://www.youtube.com/embed/2HdtXvxiAqY" title="Aplicação de Busca de mapas usando a API do Google Maps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </p>
 
-![Brazil Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png) ![USA Flag](https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg)
-
-<p align="center">
+<p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" alt="Brazil Flag" width="30" height="20"> 
   <strong>Descrição em Português</strong>
 </p>
@@ -74,7 +72,7 @@ Search Map App é um aplicativo web que permite aos usuários buscar um endereç
 
 ---
 
-<p align="center">
+<p>
   <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA Flag" width="30" height="20"> 
   <strong>Description in English</strong>
 </p>
