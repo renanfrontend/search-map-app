@@ -73,5 +73,6 @@ export class AppComponent implements OnInit {
 
   private applyTheme(): void {
     document.body.classList.toggle('dark-mode', this.isDarkMode);
+    document.body.classList.toggle('light-mode', !this.isDarkMode);
   }
 }

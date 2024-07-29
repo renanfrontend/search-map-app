@@ -1,11 +1,11 @@
 /* Variáveis de cores para temas */
 :root {
-  --primary-bg-color-light: #333333;
-  --primary-text-color-light: #ffffff;
-  --secondary-bg-color-light: #444444;
-  --button-bg-color-light: #6c757d;
+  --primary-bg-color-light: #ffffff;
+  --primary-text-color-light: #000000;
+  --secondary-bg-color-light: #f1f1f1;
+  --button-bg-color-light: #007bff;
   --button-text-color-light: #ffffff;
-  --button-hover-bg-color-light: #5a6268;
+  --button-hover-bg-color-light: #0056b3;
 
   --primary-bg-color-dark: #333333;
   --primary-text-color-dark: #ffffff;
@@ -27,6 +27,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Estilos para o cabeçalho */
 header {
   position: fixed;
   top: 0;
@@ -40,31 +41,32 @@ header {
   color: var(--primary-text-color-dark);
   z-index: 1000;
   transition: background-color 0.3s, color 0.3s;
-}
 
-.logo {
-  width: 100px; /* Ajuste conforme necessário */
-}
+  .logo {
+    width: 100px; /* Ajuste conforme necessário */
+  }
 
-.theme-toggle-btn {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--button-bg-color-dark);
-  color: var(--button-text-color-dark);
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  .theme-toggle-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg-color-dark);
+    color: var(--button-text-color-dark);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 1rem; /* Ajuste a margem conforme necessário */
 
-  &:hover {
-    background-color: var(--button-hover-bg-color-dark);
+    &:hover {
+      background-color: var(--button-hover-bg-color-dark);
+    }
   }
 }
 
 /* Conteúdo principal */
 main {
   flex: 1;
-  padding-top: 4rem; /* Espaço para o header */
-  padding-bottom: 3rem; /* Espaço para o footer */
+  padding-top: 4rem; /* Espaço para o cabeçalho */
+  padding-bottom: 3rem; /* Espaço para o rodapé */
 }
 
 .search-container {
@@ -141,22 +143,22 @@ footer {
   text-align: center;
   border-top: 1px solid var(--secondary-bg-color-dark);
   z-index: 1000;
-}
 
-footer p {
-  margin: 0;
-}
+  p {
+    margin: 0;
+  }
 
-.social-links {
-  margin-top: 10px;
+  .social-links {
+    margin-top: 10px;
 
-  a {
-    margin: 0 10px;
-    display: inline-block;
+    a {
+      margin: 0 10px;
+      display: inline-block;
 
-    img {
-      width: 24px;
-      height: 24px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
@@ -178,3 +180,30 @@ footer p {
   margin-right: auto; /* Centralizar horizontalmente */
 }
 
+/* Estilos para o tema claro */
+body.light-mode {
+  background-color: var(--primary-bg-color-light);
+  color: var(--primary-text-color-light);
+}
+
+body.light-mode header {
+  background-color: var(--primary-bg-color-light);
+  color: var(--primary-text-color-light);
+}
+
+body.light-mode .theme-toggle-btn {
+  background-color: var(--button-bg-color-light);
+  color: var(--button-text-color-light);
+}
+
+body.light-mode .theme-toggle-btn:hover {
+  background-color: var(--button-hover-bg-color-light);
+}
+
+body.light-mode .search-container {
+  background-color: var(--secondary-bg-color-light);
+}
+
+body.light-mode .map-container .info-container {
+  background: var(--secondary-bg-color-light);
+}
